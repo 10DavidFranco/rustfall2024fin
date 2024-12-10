@@ -3,9 +3,13 @@ use std::time::Instant;
 
 fn main() {
    
-    let now = Instant::now();
-   let url = "https://www.youtube.com/";
-   let res: ureq::Response = ureq::get(url).call().unwrap();
+
+   let urls: Vec<String> = vec!["https://www.youtube.com/".to_string(),"https://www.google.com/".to_string(), "https://www.chess.com/home".to_string()];
+
+   for url in urls{
+   let now = Instant::now();
+   //let url = "https://www.youtube.com/";
+   let res: ureq::Response = ureq::get(&url).call().unwrap();
    println!(
         "HTTP GET, no path interpolation, no query parameters:\n- URL: {}\n- res code: {},\n",
         url,
@@ -20,6 +24,6 @@ fn main() {
    }else{
         println!("ERROR");
    }
-   
+}
     //println!("Hello, world!");
 }
