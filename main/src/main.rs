@@ -1,6 +1,7 @@
 use ureq;
 use std::time::Instant;
 use std::thread;
+use std::time::Duration;
 
 fn main() {
     let totaltime = Instant::now();
@@ -23,7 +24,7 @@ fn main() {
             let now = Instant::now();
 
             
-            let res = ureq::get(&url).call();
+            let res = ureq::get(&url).timeout(Duration::new(5, 0)).call();
 
             match res {
                 Ok(response) => {
@@ -45,7 +46,7 @@ fn main() {
                 }
                 Err(e) => {
                    
-                    println!("Failed to request URL {}: {}", url, e);
+                    println!("!!!!!Failed to request URL {}: {}!!!!!\n\n", url, e);
                 }
             }
         });
