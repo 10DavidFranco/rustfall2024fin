@@ -10,6 +10,10 @@ fn main() {
         "https://www.google.com/".to_string(),
         "https://www.chess.com/home".to_string(),
         "https://leetcode.com/".to_string(),
+        "https://www.coolmathgames.com/".to_string(),
+        "https://www.utrgv.edu/".to_string(),
+     
+
     ];
 
     let mut handles = vec![];
