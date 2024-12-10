@@ -60,6 +60,10 @@ fn main() {
         "https://leetcode.com/".to_string(),
         "https://www.coolmathgames.com/".to_string(),
         "https://www.utrgv.edu/".to_string(),
+        "https://open.spotify.com/".to_string(),
+        "https://en.wikipedia.org/wiki/Wrestling".to_string(),
+        "https://en.wikipedia.org/wiki/Audioslave".to_string(),
+
      
 
     ];
