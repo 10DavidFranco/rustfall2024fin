@@ -20,9 +20,9 @@ fn main() {
    let elapsed = now.elapsed();
    println!("Reponse time: {:.2?}", elapsed);
    if res.status() == 200 {
-        println!("No errors encountered!");
+        println!("No errors encountered!\n\n");
    }else{
-        println!("ERROR");
+        println!("ERROR\n\n");
    }
 }
     //println!("Hello, world!");
