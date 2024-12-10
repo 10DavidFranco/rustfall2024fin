@@ -30,6 +30,9 @@ fn main() {
    );
    let elapsed = now.elapsed();
    println!("Response time: {:.2?}", elapsed);
+
+  
+
    if res.status() == 200 {
         println!("No errors encountered!\n\n");
    }else{
