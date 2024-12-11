@@ -19,7 +19,7 @@ fn webchecker(urls: Vec<String>){
                 Ok(response) => {
                     
                     println!(
-                        "HTTP GET, no path interpolation, no query parameters:\n- URL: {}\n- res code: {}",
+                        "HTTP GET:\n- URL: {}\n- res code: {}",
                         url,
                         response.status()
                     );
